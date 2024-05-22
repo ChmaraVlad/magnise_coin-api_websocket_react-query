@@ -1,15 +1,13 @@
 import Chart from "./components/Chart";
 import EntityInfo from "./components/EntityInfo";
-import MarketInfo from "./components/MarketInfo";
+
+import './App.css'
 
 function App() {
   return (
-    <div>
+    <div className="app">
       <EntityInfo />
-      <main>
-        <MarketInfo />
-        <Chart />
-      </main>
+      <Chart />
     </div>
   );
 }
