@@ -4,6 +4,25 @@ export interface ChainAddress {
   address: string;
 }
 
+export interface IExchangeResponse {
+  asset_id_base: string
+  asset_id_quote: string
+  rate: number
+  time: string
+}
+export interface IExchangeHistoryResponse {
+  price_close: number
+  price_high: number
+  price_low: number
+  price_open: number
+  trades_count: number
+  volume_traded: number
+  time_close: Date
+  time_open: Date
+  time_period_end: Date
+  time_period_start: Date
+}
+
 export interface CryptoAssetData {
   asset_id: string;
   name: string;
